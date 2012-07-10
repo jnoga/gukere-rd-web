@@ -89,6 +89,25 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
 	margin:0 5%;
 }
 
+.tag {
+position: absolute;
+right: 2%;
+margin-top: 0px;
+width: 54px;
+height: 108px;
+text-indent: -9999px;
+background: url(/Users/agomez/Desktop/Desarrollo/GukereWeb/gukere-rd-web/img/tag_off.png) no-repeat top;
+overflow: auto;
+}
+
+/*SMALL*/
+nav small {
+	color: white;	
+	font: 100 11px/1 Helvetica, Verdana, Arial, sans-serif;
+	text-transform: none;
+ 
+}
+
 .header-img { 
 	border: 0; 
 	-ms-interpolation-mode: bicubic; 
@@ -128,6 +147,7 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
 #main aside      { border-radius: 10px; margin-top: 6%;}
 
 #header-container,
+#footer-container,
 #main aside{
 	background:#D8D8D8;
 }
@@ -138,8 +158,8 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
 }
 
 #footer-container{
-	background:#663366;
 	padding-bottom: 40px;
+	border-top: 20px solid #663366;
 }
 
 #title{ 
@@ -150,7 +170,7 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
 }
 
 #footer-text p{
-	color: white;
+	color: #663366;
 	float: left;
 	padding-top: 0px;
 	padding-right: 20px;
@@ -185,6 +205,12 @@ nav a{
 	text-decoration:none;
 	font-weight:bold;
 	border-radius: 10px 10px 10px 10px;
+		/*TRANSISTIONS*/
+	-webkit-transition: background 0.5s ease;
+	   -moz-transition: background 0.5s ease;
+	     -o-transition: background 0.5s ease;
+	    -ms-transition: background 0.5s ease;
+	        transition: background 0.5s ease;
 }
 
 nav a:hover, nav a:visited{
@@ -192,7 +218,16 @@ nav a:hover, nav a:visited{
 }
 
 nav a:hover{
-	text-decoration:underline;
+	background:#8A0868;
+	color:;
+}
+
+nav a:active{
+
+   -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+}
 }
 
 nav{
@@ -263,7 +298,7 @@ nav{
 		float:left;
 		width:27%;
 		margin:0 1.7%;
-		padding:25px 2%;
+		padding:10px 2%;
 		margin-bottom: 10px;
 	}
 	
