@@ -106,25 +106,64 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
 	float: left;
 	width: 125px;
 	max-width: 55%;
+	margin: 5px 2%;
+}
+
+
+.section-img { 
+	border: 0; 
+	-ms-interpolation-mode: bicubic; 
+	vertical-align: middle; 
+	float: left;
+	width: 50px;
+	max-width: 15%;
 	padding: 10px 10px 10px 0px
 }
+
 /* ===================
     ALL: Gukere Theme
    =================== */
 
 #header-container{ border-bottom: 20px solid #663366; }
-#footer-container{ border-top: 20px solid #663366; }
-#main aside      { border-radius: 10px; }
+#main aside      { border-radius: 10px; margin-top: 6%;}
 
 #header-container,
-#footer-container,
 #main aside{
 	background:#D8D8D8;
 }
 
+#main section{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#footer-container{
+	background:#663366;
+	padding-bottom: 40px;
+}
+
 #title{ 
+	display:block;
 	font-family: neuropoli;
-	color:#663366; 
+	color:#663366;
+	vertical-align: text-bottom;
+}
+
+#footer-text p{
+	color: white;
+	float: left;
+	padding-top: 0px;
+	padding-right: 20px;
+}
+
+#social ul{
+	width: 90%;
+	display: none;
+}
+
+#social li{
+	float: right;
+	list-style: none;
 }
 
 ::-moz-selection { background: #f16529; color: #fff; text-shadow: none; }
@@ -180,11 +219,12 @@ nav{
 
 #main aside p{
 	text-align: justify;
+	font-size: 18px;
+	font-family: sans-serif;
+	font-style:italic;
 }
 
 #footer-container footer{
-	float: right;
-	color:black;
 	padding:20px 0;
 }
 
@@ -281,6 +321,17 @@ nav{
 	#main aside{
 		float:right;
 		width:28%;
+	}
+
+	#main section{
+		height: 500px;
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+	#social ul{
+		width: 90%;
+		display: block;
 	}
 }
 
